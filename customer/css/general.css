@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #fbe9d0;
+    --secondary-color: #244855;
+    --neutral-color: #e64833;
+    --activate-color: #e45c4a;
+    --font-size: 16px;
+    --margin: 20px;
+}
+
+*{
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-color);
+    margin-bottom: 1000px;
+    min-width: 990px;
+    background-image: url(../pictures/background-image/bg-pattern2.png);
+    background-size: 900px;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+

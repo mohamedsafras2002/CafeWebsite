@@ -1,0 +1,114 @@
+body {
+    margin-bottom: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+    min-width: none; 
+    align-items: center; 
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    height: 300px;
+    z-index: 100;
+    margin-top: 100px;
+
+}
+
+.footer .left-section {
+    display: flex;
+    margin-right: 70px;
+    align-items: start;
+    flex-direction: column;
+}
+
+.footer .left-section div {
+    margin-bottom: 18px;
+    
+}
+
+.footer .left-section #about-us {
+    margin-bottom: 0;
+}
+
+.footer .left-section a {
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.footer .left-section a:hover {
+    color: rgb(209, 209, 209);
+
+}
+
+.footer .right-section {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    justify-content: center;
+}
+
+
+.footer.contact-details {
+    display: flex;
+    width: 100px;
+    
+}
+
+.footer .contact-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 30px;
+    
+}
+
+.footer .contact-box .location,
+.footer .contact-box .tel-no,
+.footer .contact-box .opening-time {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
+
+.footer .contact-box img {
+    height: 20px;
+    margin-right: 20px;
+}
+
+.footer .contact-box p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.footer .contact-box span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: white;
+    
+}
+
+
+.footer .right-section .cafe-logo {
+    height: 120px;
+    margin: 0 30px;
+}

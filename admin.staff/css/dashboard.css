@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    padding-left: 70px;
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1px;
+    z-index: 200;
+    transition: width 0.3s;
+    transition: 0.3s;
+}
+
+.sidebar.minimized {
+    width: 80px;
+}
+
+.sidebar a {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: padding 0.3s;
+}
+
+.sidebar.minimized a {
+    padding: 20px 20px;
+}
+
+.sidebar a img {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.sidebar.minimized a img {
+    margin-right: 0;
+}
+
+.sidebar a p {
+    margin: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar.minimized a p {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar a:hover {
+    background-color: rgb(39, 115, 214);
+}
+
+.sidebar .logout-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sidebar .logout-box a {
+    width: 100%;
+}
+
+
+
+.sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    padding: 20px 10px;
+}
+
+.toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    
+}
+
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+    width: 100%;
+}
+
+.sidebar.minimized + .main-content {
+    margin-left: 80px;
+}
+

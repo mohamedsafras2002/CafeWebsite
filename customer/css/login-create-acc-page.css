@@ -1,0 +1,264 @@
+body {
+    padding-top: 150px;
+    margin-bottom: 0;
+    background-image: url(../pictures/background-image/bg-pattern2.png);
+    background-size: 900px;   
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+    min-width: none; 
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 90px;
+    z-index: 1000;
+}
+
+.header .left-section {
+    display: flex;
+    margin-right: 70px;
+    align-items: center;
+}
+
+.cafe-logo {
+    height: 70px;
+}
+
+
+.header .right-section {
+    width: 750px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.header .right-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .right-section div.a {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    padding: 8px 8px;
+    margin: 0;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header .right-button a {
+    position: relative;
+}
+
+.header .right-button a:hover {
+    color: #ddd;
+}
+
+.header .right-button a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f2f2f2;
+    transition: width .3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.header .right-button a:hover::after {
+    width: 100%;
+}
+
+
+.profile .create-button {
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition: 0.16s;
+}
+ 
+.profile .create-button {
+    color: var(--secondary-color);
+    background-color: white;
+}
+
+.profile .create-button:hover {
+    color: white;
+    background: transparent;
+}
+
+
+.profile .create-button:active {
+    color: rgb(202, 202, 202);
+    background: transparent;
+    border-color: rgb(202, 202, 202);
+}
+
+/* login form */
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    background-color: var(--secondary-color);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 18px rgba(0, 0, 0, 0.36);
+}
+
+
+.input-section *{
+    display: block;
+    color: var(--primary-colorr);
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.input-section label {
+    font-size: 17px;
+    font-family: 500;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--primary-color); 
+    
+}
+
+.input-section input {
+    font-size: 16px;
+    color: var(--primary-color);
+    padding: 10px 10px;
+    width: 250px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--primary-color);
+    background: transparent;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 0px 18px rgba(0, 0, 0, 0.36);
+}
+
+.input-section input:hover {
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.40);
+}
+
+.input-section input::placeholder {
+    font-weight: 100;
+    color: var(--primary-color);
+    opacity: 0.4;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    outline: none;
+}
+
+.username-in:hover, .password-in:hover {
+    border-color: rgb(255, 217, 0);
+    opacity: 0.8;
+}
+
+.login-button, .register-button {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 25px;
+    width: 271px;
+    height: 35px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 80px;
+    transition: 0.15s;
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.16s;
+}
+
+.login-button:hover,
+.register-button:hover {
+      background-color: #ffe0b5;
+      border-color: #ffe0b5;
+}
+
+.login-button:active,
+.register-button:active {
+    background-color: var(--neutral-color);
+    background: transparent;
+    color: var(--primary-color);
+    border-width: 1;
+    border-style: solid; 
+}
+
+.login-form .signup {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: var(--activate-color);
+    font-weight: 700;
+    margin-left: 5px;
+    text-decoration: underline;
+    transition: 0.16s;
+}
+
+.signup a:hover {
+    color: #e47567;
+}
+
+.error {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 12px;
+    font-weight: 400p;
+    margin-bottom: 5px;
+    color: var(--activate-color);
+}
+
+.error-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 0.9em;
+    display: none; 
+}
+.error-box.show {
+    display: block; 
+}

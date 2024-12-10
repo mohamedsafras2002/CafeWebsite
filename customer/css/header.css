@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+    min-width: none; 
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 90px;
+    z-index: 100;
+
+}
+
+
+.header .left-section {
+    display: flex;
+    margin-right: 70px;
+    align-items: center;
+}
+
+.cafe-logo {
+    height: 70px;
+}
+
+
+.header .right-section {
+    width: 750px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.header .right-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .right-section div.a {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    padding: 8px 8px;
+    margin: 0;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header .right-button a {
+    position: relative;
+}
+
+.header .right-button a:hover {
+    color: #ddd;
+}
+
+.header .right-button a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f2f2f2;
+    transition: width .3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.header .right-button a:hover::after {
+    width: 100%;
+}
+
+
+.profile .login-button,
+.profile .create-button {
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition: 0.15s;
+}
+
+.profile .login-button {
+    color: white;
+    background: transparent;
+    margin-right: 10px;
+    
+}
+ 
+.profile .create-button {
+    color: var(--secondary-color);
+    background-color: white;
+}
+
+
+.profile .login-button:hover {
+    color: var(--secondary-color);
+    background-color: white;
+    
+}
+
+.profile .create-button:hover {
+    color: white;
+    background: transparent;
+}
+
+.profile .login-button:active {
+    color: var(--secondary-color);
+    background-color: rgb(202, 202, 202);
+    border-color: rgb(202, 202, 202);
+}
+
+.profile .create-button:active {
+    color: rgb(202, 202, 202);
+    background: transparent;
+    border-color: rgb(202, 202, 202);
+}

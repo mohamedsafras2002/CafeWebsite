@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="pictures/logo/fevicon-logo.png">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home-page-logined.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/table-reservation.css">
+    <link rel="stylesheet" href="css/about-page.css">
+    <title>Table Reservation - The Gallery Café</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img class="cafe-logo" src="pictures/logo/logo-white-bg.png">
+        </div>
+        <div class="right-section">
+            <div class="right-button">
+                <a class="home-header" href="home-page-visitor.html">Home</a>
+            </div>
+            <div class="right-button" id="reservation-header">
+                <a class="reservation-header" href="table-reservation-page-visitor.html">Table Reservation</a>
+            </div>
+            <div class="right-button" id="preorder-cushine-header">
+                <a class="preorder-cushine-header" href="preorder-cusine-page-visitor.php">Pre-Order Cuisine</a>
+            </div>
+            <div class="right-button" id="about-us">
+                <a class="about-us" href="about-page.html">About Us</a>
+            </div>
+            <div class="profile">
+                <a href="login-form-page.php">
+                    <button class="login-button">Login</button>
+                </a>
+                <a href="create-form-page.php">
+                    <button class="create-button">Create an account</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-container" id="gallery">
+            <div class="gallery">
+                <h3>Table Gallery</h3>
+                <div class="picture-grid">
+                    <div class="picture-container"><img src="pictures/table-pictures/1.jpg"></div>
+                    <div class="picture-container"><img src="pictures/table-pictures/2.jpg"></div>
+                    <div class="picture-container"><img src="pictures/table-pictures/3.jpg"></div>
+                    <div class="picture-container"><img src="pictures/table-pictures/4.jpg"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="table-reservation-container" id="contact-us">
+            <div class="reservation-layout">
+                <div class="reservation-container">
+                    <form class="reservation-form" id="reservation-form" method="post" autocomplete="off">
+                        <label class="title">Reserve Table</label>
+                        <div id="form-messages" style="color: green; margin-bottom: 10px;"></div>
+                        <div class="input-section">
+                            <label>Name</label>
+                            <input id="name" type="text" name="name" placeholder="Enter your name">
+                            <p id="nameError" class="error"></p>
+                        </div>
+                        <div class="input-section">
+                            <label>Person</label>
+                            <input id="person" type="number" name="person" placeholder="Enter the number of persons">
+                            <p id="personError" class="error"></p>
+                        </div>
+                        <div class="input-section">
+                            <label>Date</label>
+                            <input id="date" type="date" name="date" placeholder="Enter the date">
+                            <p id="dateError" class="error"></p>
+                        </div>
+                        <div class="input-section">
+                            <label>Time</label>
+                            <input id="time" type="time" name="time" placeholder="Enter the time">
+                            <p id="timeError" class="error"></p>
+                        </div>
+                        <a href="login-form-page.php">
+                            <input class="book-button" type="button" value="Book now">
+                        </a>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="left-section">
+
+            <div class="right-button">
+                <a class="home-header" href="home-page-visitor.html">Home</a>
+            </div>
+            <div class="right-button" id="reservation-header">
+                <a class="reservation-header" href="table-reservation-page-visitor.html">Table Reservation</a>
+            </div>
+            <div class="right-button" id="preorder-cushine-header">
+                <a class="preorder-cushine-header" href="preorder-cusine-page-visitor.php">Pre-Order Cushine</a>
+            </div>
+            <div class="right-button" id="about-us">
+                <a class="about-us" href="about-page.html">About Us</a>
+            </div>
+
+        </div>
+
+        <div class="right-section">
+            <div class="contact-box">
+
+                <div class="location">
+                    <img src="pictures/Icons/location.svg">
+                    <p><span>Address:</span> 87B, Main Street, Colombo 04</p>
+                </div>
+                <div class="tel-no">
+                    <img src="pictures/Icons/tel-no.svg">
+                    <p><span>Phone:</span> +34763445243</p>
+                </div>
+                <div class="opening-time">
+                    <img src="pictures/Icons/time.svg">
+                    <div>
+                        <p>
+                            <span>Opening Hours:</span><br>
+                            Monday - Friday <br>
+                            09.00 AM - 05.00 PM <br>
+                            Saturday - Sunday <br>
+                            09.00 AM - 09.00 PM <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-container">
+                <img class="cafe-logo" src="pictures/logo/logo-white-bg.png">
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>
+
+
+
+
+

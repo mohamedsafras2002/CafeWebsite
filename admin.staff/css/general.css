@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #31363F;
+    --secondary-color: white;
+    --neutral-color: #e64833;
+    --activate-color: #e45c4a;
+    --font-size: 16px;
+    --margin: 20px;
+}
+
+*{
+    font-family: roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    margin: 0;
+    
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+

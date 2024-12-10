@@ -1,0 +1,209 @@
+body {
+    padding-top: 200px;
+    height: 100%;
+
+}
+
+.food-card-container {
+    background-color:  var(--secondary-color);
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-decoration: underline 2px var(--primary-color);
+    text-underline-offset: 20px;
+}
+
+.search-container {
+    display: block;
+    margin: 30px;
+}
+
+.search-bar {
+    color: black;
+    width: 400px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.15s;
+}
+
+.search-bar:focus {
+    outline: 1px solid gold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+}
+
+
+
+.search-container input {
+    padding: 10px;
+}
+
+.food-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.food-card {
+    color: black;
+    display: flex;
+    width: 270px;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -5px 0px 20px rgba(0, 0, 0, 0.40);
+}
+
+.food-pic-container {
+    width: 270px;
+    height: 270px;
+}
+
+.food-pic-container .food-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.food-details {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 150px;
+    padding-bottom: 50px;
+}
+
+.food-name {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 10px 5px 10px;
+}
+
+.cusine-type {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(109, 109, 109);
+    padding: 0px 10px 5px 10px;
+    
+}
+
+.food-price {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    margin-top: 7px;
+}
+
+.preorder-container {
+    display: flex;
+    justify-content: center;
+    margin: 14px 14px 8px 14px;
+}
+
+.preorder-container button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: 0.15s;
+}
+
+.preorder-container button:hover {
+    opacity: 0.85;
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.quantity-container .minus,
+.quantity-container .plus {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    height: 16px;
+    font-size: 20px;
+    border: none;
+    color: black;
+    
+}
+
+.quantity-container .minus {
+    margin-right: 10px;
+    padding: 9px 5px;
+}
+
+.quantity-container .plus {  
+    margin-left: 10px;
+    padding: 9px 2px;
+}
+
+.quantity-container .quantity {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    width: fit-content;
+    display: none; /* Initially hidden */
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.success-message.show {
+    display: block;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+
+
+
+
